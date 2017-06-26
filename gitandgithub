@@ -1,0 +1,43 @@
+Git: is a version control system
+	git init => to initialize the folder
+to keep track:
+Staging Environment: git add . => add files
+git status => status of the files
+git commit => is a record of the state of the folder
+git log => shows us where we are at, shows a logs of all commit
+commit vs staging is like saving and printing
+git checkout filename=> can discard the changes in the working directory
+
+unstaging => git reset HEAD filename => replacing staging environment into working environment
+
+DELETING FILES:
+	also have to delete from staging
+	git rm filename or .
+	rm => deletes also from the staging environment
+	git add --all => super push to delete the file
+
+Manging your log:
+	has a long hash
+	use the hash to pull the project
+	git checkout hash_number
+	
+git checkout master => use to go back to normal branch
+to use the other branch => git checkout branchname
+
+Git Branches: 
+	create new => git branch branchname
+
+Git Merge: from one branch to another
+	if you are on master : git merge other_branch_name
+	
+rename a branch => git branch -m  original_name new_name
+remove a branch => git branch -D branch_name
+
+Download project with all branches => git branch -a to see all branches
+	pull other branches => git checkout -b branch_name location (origin/branch_name)
+	pull at once => create a directory
+			switch to the directory
+			clone a repo => git clone --mirror git_url .git
+
+git clone -b branch_name git_url => clone specific branch from git project
+
